@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clockwork</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<link rel="stylesheet" type="text/css" href="dhtmlx/dhtmlxSuite/codebase/dhtmlx.css"/> 
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel="stylesheet" href="css/bootstrap/bootstrap-grid-3.3.1.min.css" />	
+	<script type="text/javascript" src="dhtmlx/dhtmlxSuite/codebase/dhtmlx.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>	
+</head>
+<body onload="doOnLoad()">
+	<div id = "main_header">
+		<img class="header_img" src="src/images/Clockwork.png">
+		<img src="src/images/contact.jpg" style="text-align: right;">
+	</div>
+		<div class="main_menu">
+		
+			<ul>
+			<li><div id="txt"></div>	</li> 
+			<li class="active"><a href="#">ГЛАВНАЯ</a></li>
+				<li><a href="/pages/zapoln.php">АКЦИИ</a></li>
+				<li><a href="#">О НАС</a></li>
+				<li><a href="#">НОВИНКИ</a></li>
+				<li><a href="#">ПОДАРКИ</a></li>
+				<li><a href="#">ДУБЛИКАТЫ</a></li>
+				<li>
+					<form action = '/pages/enter.php' method="post">
+				<input class="login_input" type="text" name="login" placeholder=" Логин"></li>
+				<input class="login_input" type="text" name="pass" placeholder=" Пароль"></li>
+				<input type="submit" value="ВXOД" name="enter" style="
+		background-color: #3399cc;
+      color: #fff;
+      border:none;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1vw;"">
+					</form>
+				</li>
+				<li><a id ="login" href="/pages/reg.html">РЕГИСТРАЦИЯ</a></li>
+			</ul>
+		</div>			
+		<div class="main_page">
+			<div class="treeViewContainer">
+				<div id="treeviewObj">
+     			</div>
+			</div>
+			<div class="products ">
+				<div class="product col-xs-6 col-sm-6 col-md-4">
+					<a href=""><img src="src/images/watch.jpg">
+						<h3>IWC</h3>
+						<h4>Pilot Watch</h4>
+						</br>
+						<h4>15000 &#8372</h4>
+					</a>
+					<button onclick="alert('You should login first')">Купить</button>
+				</div>
+				<div class="product col-xs-6 col-sm-6 col-md-4">
+					<a href=""><img src="src/images/blancpain.jpg">
+						<h3>Blancpain</h3>
+						<h4>500 Fathoms</h4>
+						</br>
+						<h4>20000 &#8372</h4>
+					</a>
+					<button onclick="alert('You should login first')">Купить</button>
+				</div>
+				<div class="product col-xs-6 col-sm-6 col-md-4">
+					<a href=""><img src="src/images/hublot.jpg">
+						<h3>Hublot</h3>
+						<h4>Big Bang Women's</h4>
+						</br>
+						<h4>10000 &#8372</h4>
+					</a>
+					<button onclick="alert('You should login first')">Купить</button>
+				</div>
+				<div class="product col-xs-6 col-sm-6 col-md-4">
+					<a href=""><img src="src/images/breguet.jpg">
+						<h3>Breguet</h3>
+						<h4>Tradition</h4>
+						</br>
+						<h4>12000 &#8372</h4>
+					</a>
+					<button onclick="alert('You should login first')">Купить</button>
+				</div>
+				<div class="product col-xs-6 col-sm-6 col-md-4">
+					<a href=""><img src="src/images/omega.jpg">
+						<h3>Omega</h3>
+						<h4>Seamaster</h4>
+						</br>
+						<h4>14000 &#8372</h4>
+					</a>
+					<button onclick="alert('You should login first')">Купить</button>
+				</div>
+			</div>
+		</div>	
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

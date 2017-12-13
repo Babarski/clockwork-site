@@ -1,0 +1,100 @@
+.icon_file{
+	background-image: url("src/images/icon.png");
+}
+.icon_opened{
+	background-image: url("src/images/icon.png");
+}
+.icon_closed{
+	background-image: url("src/images/icon.png");
+}
+#main_header{
+	text-align: center;
+}
+.main_menu ul{
+	text-align: center;
+	background-color: #3399cc;
+
+}
+.main_menu{
+	margin-bottom: 40px;
+}
+.main_menu a{
+      background-color: #3399cc;
+      color: #fff;
+      display: block; 
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 25px;
+      padding-right: 25px;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1vw;
+    }
+
+.main_menu a:hover {
+      background-color: #246282;
+      text-decoration: none;
+      color: #fff;
+    }
+    .main_menu ul li{
+      display: inline-block;
+      text-decoration: none;
+      color: #fff ;       
+    }
+}
+.main_page{
+	margin-top: 10px;
+	height: 100%;
+	width:auto;
+	display: block
+}
+.treeViewContainer{
+	float:left;
+	margin-left: 8%;
+	height: 100%;
+	width: 16%;
+}
+#treeviewObj{
+	height: 500px;
+}
+.products{
+	float:left;
+	width: 68%;
+	padding: none;
+}
+.product{
+	display: block;
+	text-align: center;
+}
+.product a{
+	font-family: 'Roboto', sans-serif;
+	color: black;
+}
+.product h3,h4{
+	margin: 0px;
+}
+.product button{
+	background-color: #fff;
+	width: 60%;
+	border:1px solid;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	-webkit-border-radius: 5px;
+}
+.product button:hover{
+	color:#3399cc;
+	border-color:  #3399cc;
+}
+
+.login_input{
+	color: black;
+    margin: 0px;
+    padding: 0px;
+    width: 100px;
+    border-color:  #3399cc;
+    -webkit-border-radius: 5px;
+}
+#login{
+padding-left: 0px;
+ padding-right: 10px;
+}

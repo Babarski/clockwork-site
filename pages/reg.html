@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Clockwork</title>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../dhtmlx/dhtmlxSuite/codebase/dhtmlx.css"/> 
+	<link rel="stylesheet" type="text/css" href="../../css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="pages.css"/>
+	<link rel="stylesheet" href="../../css/bootstrap/bootstrap-grid-3.3.1.min.css" />	
+	<script type="text/javascript" src="../../dhtmlx/dhtmlxSuite/codebase/dhtmlx.js"></script>
+	<script type="text/javascript" src="../../scripts/script.js"></script>
+</head>
+<body onload="startTime()">
+	<div id = "main_header">
+		<img class="header_img" src="../../src/images/Clockwork.png">
+		<img src="../../src/images/contact.jpg" style="text-align: right;">
+	</div>
+	<div class="main_menu">
+		<ul>
+		<li><div id="txt"></div></li>
+		<li class="active"><a href="#">ГЛАВНАЯ</a></li>
+			<li><a href="#">АКЦИИ</a></li>
+			<li><a href="#">О НАС</a></li>
+			<li><a href="#">НОВИНКИ</a></li>
+			<li><a href="#">ПОДАРКИ</a></li>
+			<li><a href="#">ДУБЛИКАТЫ</a></li>
+			<li><input class="login_input" type="text" name="login" placeholder=" Логин"></li>
+			<li><input class="login_input" type="text" name="pass" placeholder=" Пароль"></li>
+			<li><a id ="login" href="#">ВХОД</a></li>
+			<li><a id ="login" href="/pages/reg.html">РЕГИСТРАЦИЯ</a></li>
+		</ul>
+	</div>
+	
+	<h1 style="text-align: center; color: #3399cc">Быстрая регистрация</h1>
+	<div class = "form">
+	<form action = 'check.php' method="post">
+		<div class = "regFields">
+			<label>Имя и Фамилия</label>
+			<input type="text" name="name">
+		</div>
+		<div class = "regFields">
+			<label>Дата рождения</label>
+			<input type="date" name="birthday" style="width: 174px">
+		</div>
+		<div class = "regFields">
+			<label>Email</label>
+			<input type="text" name="email">
+			<!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" -->
+		</div>
+		<div class = "regFields">
+			<label>Логин</label>
+			<input type="text" name="login">
+		</div>
+		<div class = "regFields">
+			<label>Пароль</label>
+			<input type="text" name="pass">
+		</div>
+		<div class = "regFields">
+			<label>Повторите пароль</label>
+			<input type="text" name="reppass">
+		</div>
+		<div>
+			<input type="submit" value="Зарегистрироваться" name="Submit" onClick="return Formdata(this.form)" style="
+		background-color: #3399cc;
+      color: #fff;
+      border:none;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1,5vw;">
+      		<button style="background-color: #3399cc;
+      font-family: 'Roboto', sans-serif;
+      border:none;
+      font-size: 1,5vw;">
+      <a href="check.php" style="color: #fff;border:none; text-decoration: none;">Проверить браузер</a></button>
+		</div> 
+		
+	</form>
+	</div>
+	<script type="text/javascript">
+		function startTime() {
+		 var today=new Date();
+		 var h=today.getHours();
+		 var m=today.getMinutes();
+		 var s=today.getSeconds();
+		 m = checkTime(m);
+		 s = checkTime(s);
+		 document.getElementById('txt').innerHTML = h+":"+m+":"+s;
+		 var t = setTimeout(function(){startTime()},1000);
+		}
+		function checkTime(i) {
+		 if (i<10) {i = "0" + i}; // добавим ноль впереди для чисел < 10
+		 return i;
+		}
+		function Formdata(data){
+			if (data.name === null){
+				alert("Name is incorrect");
+				return false;
+			}
+			/*for(var i =0; i <data.name.value.length;i++){
+				if(data.name.value[i]==" " && i!= data.name.value.length-1){
+					alert("Name is correct");
+				}
+			}*/
+			if (data.email != null && data.email.value.length>12){
+				alert("Email is incorrect");
+				return false;
+			}
+			if (data.login != null && !(/.[a-z]/.test(data.login.value)) && data.login.value.length > 9 ){
+				alert("Login is incorrect");
+				return false;
+			}
+			//alert("Your data: Name "+ data.name.value+"\nSurname "+ data.surname.value+"\n Email"+data.email.value+"\nLogin"+data.login.value)
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.regFields {
+	font-family: 'Roboto', sans-serif;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.registration{
+	
+}
+.regFieldsName{
+	
+}
+.regFieldsInput{
+
+}
+form{
+	text-align: center;
+}
+label {
+		font-family: 'Roboto', sans-serif;
+  width: 140px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: left;
+}
+h1 {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    background: white;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto 20px;
+}
+
+ th {
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+    border-bottom: 2px solid #3399cc;
+    padding: 10px 8px;
+}
+ td {
+    color: #696763;
+    padding: 9px 8px;
+}
